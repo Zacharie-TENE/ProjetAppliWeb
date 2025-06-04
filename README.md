@@ -4,6 +4,7 @@
 
 - **Node.js** : Version 22.10 recommandée (version minimale 19)
 - **Système d'exploitation** : Linux (testé sur Ubuntu)
+- **Navigateur de test** : Google chrome(windows) , Chromium (Linux). 
 
 ## Structure du projet
 
