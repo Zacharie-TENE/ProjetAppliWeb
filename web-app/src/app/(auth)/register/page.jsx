@@ -26,7 +26,7 @@ export default function RegisterPage() {
           >
             Utilisateur
           </button>
-          <button
+          {/* <button
             onClick={() => handleRoleChange('PLAYER')}
             className={`px-4 py-2 rounded-full text-sm font-medium ${
               selectedRole === 'PLAYER'
@@ -55,7 +55,7 @@ export default function RegisterPage() {
             }`}
           >
             Organisateur
-          </button>
+          </button> */}
         </div>
       </div>
       <RegisterForm userType={selectedRole} />
