@@ -1,0 +1,182 @@
+/web-app
+├── eslint.config.mjs
+├── index.js
+├── next-env.d.ts
+├── next.config.ts
+├── package.json
+├── postcss.config.mjs
+├── README.md
+├── tsconfig.json
+├── public/           # Ressources statiques
+│   ├── file.svg
+│   ├── globe.svg
+│   ├── next.svg
+│   ├── vercel.svg
+│   └── window.svg
+└── src/              # Code source de l'application
+
+
+Structure du code source (src/)
+
+/src
+├── specification.txt
+├── structure.txt
+├── app/              # Dossiers pour le routage basé sur l'app directory Next.js
+├── components/       # Composants réutilisables
+├── context/         # Contextes React globaux
+├── data/            # Données fictives pour le développement
+├── hooks/           # Hooks React personnalisés
+├── lib/             # Bibliothèques et utilitaires
+└── services/        # Services pour les appels d'API
+
+
+Structure des routes d'application (app/)
+
+/src/app
+├── Clientlayout.jsx    # Layout côté client pour toute l'application
+├── error.jsx           # Page d'erreur générique
+├── globals.css         # Styles globaux
+├── layout.tsx          # Layout principal de l'application
+├── not-found.jsx       # Page 404
+│
+├── (auth)/             # Groupe de routes d'authentification
+│   ├── layout.jsx
+│   ├── forgot-password/
+│   │   └── page.jsx
+│   ├── login/
+│   │   └── page.jsx
+│   └── register/
+│       └── page.jsx
+│
+├── (public)/           # Groupe de routes publiques
+│   ├── layout.jsx
+│   ├── page.jsx        # Page d'accueil
+│   ├── competitions/
+│   │   ├── page.jsx
+│   │   └── [id]/
+│   │       └── page.jsx
+│   ├── matches/
+│   │   ├── page.jsx
+│   │   └── [id]/
+│   │       └── page.jsx
+│   ├── media/
+│   │   └── page.jsx
+│   ├── players/
+│   │   ├── page.jsx
+│   │   └── [id]/
+│   │       └── page.jsx
+│   └── teams/
+│       ├── page.jsx
+│       └── [id]/
+│           └── page.jsx
+│
+└── dashboard/         # Tableau de bord (routes protégées)
+    ├── layout.jsx
+    ├── page.jsx
+    ├── admin/         # Administration
+    │   ├── competitions/
+    │   │   └── page.jsx
+    │   ├── matches/
+    │   │   └── page.jsx
+    │   ├── media/
+    │   │   └── page.jsx
+    │   ├── players/
+    │   │   └── page.jsx
+    │   ├── teams/
+    │   │   └── page.jsx
+    │   └── users/
+    │       └── page.jsx
+    ├── coach/         # Interface pour les entraîneurs
+    │   └── teams/
+    │       ├── page.jsx
+    │       └── [teamId]/
+    │           ├── page.jsx
+    │           ├── matches/
+    │           │   ├── page.jsx
+    │           │   └── [matchId]/
+    │           │       └── match-sheet/
+    │           │           └── page.jsx
+    │           └── players/
+    │               └── page.jsx
+    ├── messages/      # Messagerie
+    │   ├── page.jsx
+    │   ├── compose/
+    │   │   └── page.jsx
+    │   └── [messageId]/
+    │       └── page.jsx
+    ├── notifications/ # Notifications
+    │   └── page.jsx
+    ├── organizer/     # Interface pour les organisateurs
+    │   └── competitions/
+    │       ├── page.jsx
+    │       ├── create/
+    │       │   └── page.jsx
+    │       └── [competitionId]/
+    │           ├── page.jsx
+    │           ├── matches/
+    │           │   ├── page.jsx
+    │           │   ├── create/
+    │           │   │   └── page.jsx
+    │           │   └── [matchId]/
+    │           │       ├── page.jsx
+    │           │       └── validate-sheet/
+    │           │           └── page.jsx
+    │           └── teams/
+    │               └── page.jsx
+    └── profile/       # Profil utilisateur
+        ├── page.jsx
+        └── settings/
+            └── page.jsx
+
+
+Structure des composants (components/)
+
+
+/src/components
+├── auth/             # Composants d'authentification
+├── competition/      # Composants liés aux compétitions
+├── dashboard/        # Composants du tableau de bord
+│   ├── common/       # Composants communs du dashboard
+│   └── navigation/   # Navigation du dashboard
+├── match/            # Composants liés aux matchs
+├── media/            # Composants liés aux médias
+├── messages/         # Composants pour la messagerie
+├── notifications/    # Composants pour les notifications
+├── player/           # Composants liés aux joueurs
+├── team/             # Composants liés aux équipes
+├── ui/               # Composants d'interface utilisateur génériques
+└── utils/            # Composants utilitaires
+
+
+Structure des contextes, hooks, services et bibliothèques
+
+
+/src/context          # Contextes React pour la gestion d'état global
+  ├── AuthContext.jsx
+  ├── FilterContext.jsx
+  ├── NotificationContext.jsx
+  └── ThemeContext.jsx
+
+/src/hooks            # Hooks personnalisés pour la logique réutilisable
+  ├── useAuth.jsx
+  ├── useDataFetch.jsx
+  ├── useFilter.jsx
+  ├── useNotification.jsx
+  ├── usePagination.jsx
+  ├── useRoleAccess.jsx
+  ├── useSort.jsx
+  └── useTheme.jsx
+
+/src/services         # Services pour les appels d'API
+  ├── auth-service.js
+  ├── competition-service.js
+  ├── match-service.js
+  ├── media-service.js
+  ├── message-service.js
+  ├── notification-service.js
+  ├── player-service.js
+  └── team-service.js
+
+/src/lib              # Bibliothèques utilitaires
+  ├── api/            # Configuration API
+  └── utils/          # Fonctions utilitaires

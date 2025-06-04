@@ -1,0 +1,120 @@
+Composants d'authentification (auth/)
+ForgotPasswordForm.jsx - Formulaire de récupération de mot de passe
+LoginForm.jsx - Formulaire de connexion
+RegisterForm.jsx - Formulaire d'inscription
+UserForm.jsx - Formulaire générique pour les données utilisateur
+
+
+Composants de compétition (competition/)
+CompetitionCard.jsx - Carte affichant les informations d'une compétition
+CompetitionDetails.jsx - Détails complets d'une compétition
+CompetitionFilters.jsx - Filtres pour la liste des compétitions
+CompetitionForm.jsx - Formulaire de création/édition de compétition
+CompetitionList.jsx - Liste des compétitions
+CompetitionMatchList.jsx - Liste des matchs d'une compétition
+CompetitionStandings.jsx - Classements d'une compétition
+CompetitionTeamList.jsx - Liste des équipes d'une compétition
+
+Composants du tableau de bord
+Composants communs (dashboard/common/)
+DashboardCard.jsx - Carte pour le tableau de bord
+FilterBar.jsx - Barre de filtres pour le tableau de bord
+PageHeader.jsx - En-tête de page du tableau de bord
+SearchBar.jsx - Barre de recherche
+StatsCard.jsx - Carte de statistiques
+
+
+Composants de navigation (dashboard/navigation/)
+Header.jsx - En-tête du tableau de bord
+MobileMenu.jsx - Menu mobile pour le tableau de bord
+NavigationItems.jsx - Éléments de navigation
+RoleSpecificNavigation.jsx - Navigation spécifique au rôle
+Sidebar.jsx - Barre latérale du tableau de bord
+UserMenu.jsx - Menu utilisateur
+
+Composants de match (match/)
+MatchCard.jsx - Carte affichant les informations d'un match
+MatchDetails.jsx - Détails complets d'un match
+MatchFilters.jsx - Filtres pour la liste des matchs
+MatchForm.jsx - Formulaire de création/édition de match
+MatchHeader.jsx - En-tête d'un match
+MatchList.jsx - Liste des matchs
+MatchSheetFilter.jsx - Filtres pour les feuilles de match
+MatchSheetForm.jsx - Formulaire de feuille de match
+MatchSheetHeader.jsx - En-tête de feuille de match
+MatchSheetPlayerTable.jsx - Tableau des joueurs dans une feuille de match
+MatchSheetTab.jsx - Onglet de feuille de match
+MatchSheetViewer.jsx - Visualiseur de feuille de match
+MatchStatistics.jsx - Statistiques de match
+MatchTabs.jsx - Onglets d'un match
+PlayerCardList.jsx - Liste des cartons des joueurs
+
+
+Composants média (media/)
+MediaCard.jsx - Carte affichant un média
+MediaFilters.jsx - Filtres pour les médias
+MediaList.jsx - Liste des médias
+MediaUploader.jsx - Téléchargeur de médias
+
+
+Composants de messagerie (messages/)
+MessageCard.jsx - Carte de message
+MessageComposer.jsx - Compositeur de message
+MessageList.jsx - Liste des messages
+MessageViewer.jsx - Visualiseur de message
+Composants de notification (notifications/)
+NotificationCard.jsx - Carte de notification
+NotificationList.jsx - Liste des notifications
+
+
+Composants de joueur (player/)
+PlayerCard.jsx - Carte d'un joueur
+PlayerDetails.jsx - Détails d'un joueur
+PlayerFilters.jsx - Filtres pour les joueurs
+PlayerForm.jsx - Formulaire de joueur
+PlayerList.jsx - Liste des joueurs
+PlayerMatchList.jsx - Liste des matchs d'un joueur
+PlayerStatsCard.jsx - Carte des statistiques d'un joueur
+PlayerStats.jsx - Statistiques d'un joueur
+
+
+Composants d'équipe (team/)
+TeamCard.jsx - Carte d'une équipe
+TeamCompetitions.jsx - Compétitions d'une équipe
+TeamDetails.jsx - Détails d'une équipe
+TeamFilters.jsx - Filtres pour les équipes
+TeamForm.jsx - Formulaire d'équipe
+TeamHeader.jsx - En-tête d'équipe
+TeamList.jsx - Liste des équipes
+TeamMatches.jsx - Matchs d'une équipe
+TeamPlayers.jsx - Joueurs d'une équipe
+TeamStanding.jsx - Classement d'une équipe
+TeamTabs.jsx - Onglets d'équipe
+
+
+Composants d'interface utilisateur (ui/)
+Alert.jsx - Alerte
+Badge.jsx - Badge
+Button.jsx - Bouton
+Card.jsx - Carte générique
+Dropdown.jsx - Menu déroulant
+EmptyState.jsx - État vide
+ErrorBoundary.jsx - Délimitation d'erreur
+ErrorMessage.jsx - Message d'erreur
+Icon.jsx - Icône
+Input.jsx - Champ de saisie
+LoadingSpinner.jsx - Indicateur de chargement
+Modal.jsx - Fenêtre modale
+Pagination.jsx - Pagination
+PlayerStatsDashboard.jsx - Tableau de bord des statistiques des joueurs
+Select.jsx - Sélecteur
+Table.jsx - Tableau
+Tabs.jsx - Onglets
+TeamRegistrationModal.jsx - Fenêtre modale d'inscription d'équipe
+ThemeSettings.jsx - Paramètres de thème
+ThemeToggle.jsx - Bascule de thème
+
+
+Composants utilitaires (utils/)
+navigationLinks.jsx - Liens de navigation
+Cette structure de composants montre une architecture bien organisée et modulaire, avec des composants regroupés par fonctionnalité. Votre application est clairement divisée en sections logiques pour gérer différentes parties du système (authentification, compétitions, équipes, joueurs, matchs, etc.) avec des composants réutilisables d'interface utilisateur.
