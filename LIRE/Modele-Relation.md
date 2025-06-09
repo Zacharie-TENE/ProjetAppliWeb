@@ -1,7 +1,6 @@
 
 ## Analyse des Relations JPA
 
-Lisez attentivement les relations entre les entités du modèle du point de vue JPA (correct je sais pas, c est comme ca que j ai fait):
 
 ### Hiérarchie des utilisateurs
 - **User** : Classe de base avec stratégie d'héritage JOINED (@Inheritance(strategy = InheritanceType.JOINED))
